@@ -18,7 +18,10 @@
 <body class="tipografia-roboto">
     <header class="fondo-amarillo" id="encabezado">
         <!--logotipo-->
-        <img class="logo" width="100%" src = "/imagenes/logo-mercado-liebre.svg">
+        <div class="logo">
+            <a href="/"><img  width="100%" src = "/imagenes/logo-mercado-liebre.svg"></a>
+        </div>
+        
         <div class="busqueda" action="#" method="GET">
             <!-- <span class="input">Buscar productos, marcas y más</span>
             <span class="submit"><i class="fa fa-search"></i></span>             -->
@@ -37,7 +40,7 @@
             </ul>
             <ul class="nav2">
                 <li><a href = "/register">Crea tu cuenta</a> <i class="fa-solid fa-address-card"></i></li>
-                <li><a href = "#">Ingresa </a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href = "/login">Ingresa </a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li><a href = "#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>                
             </ul>
         </nav>
@@ -49,13 +52,13 @@
         <section>
             <form action="/login">
             <div>
-                <input class="nombre" type="text" name="user" id="user" placeholder="Nombre de Usuario" required maxlength="25">
+                <input class="nombre" type="text" name="user" id="user" placeholder="Nombre de Usuario" required minlength="3" maxlength="25">
             </div>
             <div>
                 <input class="clave" type="password" name="password"  id="password" placeholder="Escribe tu contraseña" required></input>
             </div>
             <div>
-                <button class="boton" type="submit"><a href="/home">INGRESAR</a></button>
+                <button class="boton" type="submit"><a href="/">INGRESAR</a></button>
             </div>
             
             

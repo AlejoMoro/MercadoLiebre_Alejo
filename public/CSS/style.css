@@ -3,54 +3,25 @@
     padding: 0px;
     box-sizing: border-box;
 }
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position:absolute;
-    right: 20px;
-    top: -15px;
-    }
+/* Encabezado */
+header{
+    display: flex;
+    flex-wrap: wrap;    
+}
+#encabezado{
+    padding: 16px;   
+}
+header .logo{
+    width: 48%;
+}
+header .form{
+    display: flex;
+}
 .fondo-amarillo {
     background-color: #EAC926;    
 }
 .logo{
     margin: 5px;
-}
-.tipografia-roboto {
-    font-family: 'Roboto', sans-serif;
-    background-color:#ebebeb;
-}
-.comprarencuotas{
-    font-size: 12px;
-    margin-left:50px;
-    align-items: center;
-    justify-items: center;
-}
-.nav1, .nav2 {
-    font-size: 12px;
-}
-.tamaño-12{
-    font: size 12px;
-}
-h2{
-    font: size 24px;
-    margin: 20px;
-}
-.precio{
-    font-size: 18px; 
-    width: 30%;   
-}
-.descuento, .descripcion{
-    font-size: 16px;    
-}
-#encabezado{
-    padding: 16px;   
 }
 header .form .input{
     background-color: #FFF;
@@ -70,76 +41,6 @@ header .form .submit{
     justify-content: center;
     border-radius: 5px;
 }
-.burger-menu{
-    margin: auto;
-}
-.fas{
-    background-color: #1259c3;
-    color: white;
-    padding: 6px;
-    border-radius: 4px;
-    margin: auto;
-}
-.pie{
-    text-align: center;
-}
-
-main{
-    margin: auto;
-    width: 90%;
-}
-article{
-    margin: 5px
-}
-footer{
-    border: 30px;
-    margin-top: 40px;
-}
-footer div{
-    width:100%;
-}
-footer i{
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;  
-}
-article i, 
-.descuento{
-    color: #39b54a;           
-}
-.desproduc{
-    display:flex;
-    flex-wrap: wrap;
-    background-color: white;
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    position: relative;
-}
-.descripcion{
-    display: none;
-    width: 100%;    
-}
-nav{
-    display: none;
-}
-article i{
-    width: 100%;
-    text-align: right;
-}
-.descuento{
-    width: 70%;
-    text-align: center;
-}
-header{
-    display: flex;
-    flex-wrap: wrap;    
-}
-header .logo{
-    width: 48%;
-}
-header .form{
-    display: flex;
-}
 .busqueda{
     display: flex;
     width: 30%;
@@ -158,9 +59,121 @@ header .form{
 .form input{
     border-style: none;
 }
+.comprarencuotas{
+    font-size: 12px;
+    margin-left:50px;
+    align-items: center;
+    justify-items: center;
+}
+.nav1, .nav2 {
+    font-size: 12px;
+}
+.burger-menu{
+    margin: auto;
+}
+.fas{
+    background-color: #1259c3;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    margin: auto;
+}
+nav{
+    display: none;
+}
+.tipografia-roboto {
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
+}
+/* Main */
+main{
+    margin: auto;
+    width: 90%;
+}
+article{
+    margin: 5px
+}
+.tamaño-12{
+    font: size 12px;
+}
+h2{
+    font: size 24px;
+    margin: 20px;
+}
+.precio{
+    font-size: 18px; 
+    width: 30%;   
+}
+.descuento, .descripcion{
+    font-size: 16px;    
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute;
+    right: 20px;
+    top: -15px;
+}
+article i, 
+.descuento{
+    color: #39b54a;           
+}
+.desproduc{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+.descripcion{
+    display: none;
+    width: 100%;    
+}
+article i{
+    width: 100%;
+    text-align: right;
+}
+.descuento{
+    width: 70%;
+    text-align: center;
+}
+/* FOOTER */
+.pie{
+    text-align: center;
+}
+
+footer{
+    border: 30px;
+    margin-top: 40px;
+}
+footer div{
+    width:100%;
+}
+footer i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;  
+}
 @media (min-width: 361px){
-    .descripcion{
-        display:block;
+    header .logo{
+        width: 30%;        
+    }
+    header .form{
+        width: 30%;
+    }
+    header{
+        align-items: center;
+        justify-content: center;
+    }
+    .comprarencuotas{
+        width: 30%;
     }
     nav{
         display: block;
@@ -173,24 +186,14 @@ header .form{
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .descripcion{
+        display:block;
+    }
     article{
         width: 45%;
     }
     section h2{
         width: 100%;
-    }
-    header{
-        align-items: center;
-        justify-content: center;
-    }
-    header .logo{
-        width: 30%;        
-    }
-    header .form{
-        width: 30%;
-    }
-    .comprarencuotas{
-        width: 30%;
     }
 
     nav {

@@ -32,6 +32,12 @@ h4{
    width: auto;
    margin-top: 10px;
 }
+/* input:valid{
+    border: 2px solid #39b54a;
+} */
+/* input:invalid{
+    border: 2px solid red;
+} */
 .boton{
     background-color: #1259c3;
     color: white;
@@ -50,5 +56,4 @@ footer{
 }
 footer div{
     width: 28%;
-    padding: 100%;
 }

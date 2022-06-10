@@ -17,7 +17,9 @@
 <body class="tipografia-roboto">
     <header class="fondo-amarillo" id="encabezado">
         <!--logotipo-->
-        <img class="logo" width="100%" src = "/imagenes/logo-mercado-liebre.svg">
+        <div class="logo">           
+            <a href="/" width="100%"> <img  width="100%" src = "/imagenes/logo-mercado-liebre.svg"></a>
+        </div>        
         <div class="busqueda" action="#" method="GET">
             <!-- <span class="input">Buscar productos, marcas y más</span>
             <span class="submit"><i class="fa fa-search"></i></span>             -->
@@ -49,7 +51,7 @@
         <form action="/register" method="post">
             <div>
                 <label for="nombre"></label>
-                <input id="nobre" type="text" name="Nombre" id="nombre" placeholder="Nombre y Apellido" required maxlength="25">
+                <input id="nobre" type="text" name="Nombre" id="nombre" placeholder="Nombre y Apellido" required minlength="3" maxlength="25">
             </div>
             <div>
                 <label for="nombre de usuario"></label>
@@ -93,7 +95,7 @@
                 <input type="password" name="confirmar-password"  id="confirmar-password" placeholder="Confirmar Contraseña:"></input>
             </div>
             <div>
-                <button class="boton" type="submit"><a href="/home">Enviar</a></button>
+                <button class="boton" type="submit"><a href="/">Enviar</a></button>
                 <button class="boton" type="reset">Borrar</button>
             </div>     
         </form>
@@ -115,5 +117,5 @@
             <p class="tamaño-12">¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@</p>
         </div>
         <p class="tamaño-12" id="copyright">Copyright 1999-2020 MercadoLiebre S.R.L.</p>
-    </footer>
+    </footer>    
 </body>
